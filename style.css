@@ -1,5 +1,6 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 .p1 {
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255, 0, 0, 0) 70.71%),
@@ -9,7 +10,7 @@
 .header {
     display: flex;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 200px;
     font-size: 50px;
 }
 .h-paragraph {
@@ -20,12 +21,7 @@
 }
 
 /*                                NAVIGATION         */
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 35px;
-    padding-top: 20px;
-}
+
 .exp:hover, .blog:hover, .resume:hover {
     cursor: pointer;
     transform: scale(1.3);
@@ -36,10 +32,10 @@
 .icons {
     display: flex;
     justify-content: center;
-    font-size: 38px;
+    font-size: 45px;
     word-spacing: 200px;
-    padding-top: 50px;
-    padding-bottom: 130px;
+    padding-top: 125px;
+    padding-bottom: 200px;
 }
 .git:hover, .linkedin:hover, .pdf:hover {
     cursor: pointer;
@@ -48,19 +44,20 @@
 }
 
 /*                                PAGE 2         */
-.nav {
-    position: relative;
-    
-}
+
 .navbar2 {
     display: flex;
     justify-content: space-evenly;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     padding-top: 10px;
     font-size: 30px;
-    border: 5px solid red;
+    
+    background: linear-gradient(217deg, rgba(255,0,0), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255), rgba(0,0,255) 70.71%);
+    
 }
 .home:hover {
     cursor: pointer;
@@ -87,4 +84,15 @@
 
 .li {
     padding-top: 10px;
+}
+
+.m-section {
+width: 75%;
+float: right;
+}
+.buttons {
+width: 25%;
+float: left;
+
+
 }
