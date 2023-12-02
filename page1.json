@@ -1,0 +1,43 @@
+{
+    "navbarOpts" : [
+        {
+            "opt1": "home",
+            "link": "#home"
+            
+        },
+        {
+            "opt1": "experience",
+            "link": "#experience"
+            
+        },
+        {
+            "opt1": "blogs",
+            "link": "#blogs"
+            
+        },
+        {
+            "opt1": "resume",
+            "link": "#resume"
+            
+        }
+    ],
+    "Heading" : [
+        {
+            "header": "I'm Kayla Dale",
+            "qualities": "Creative, Driven & eager to learn"
+            
+        }
+    ],
+    "links" : [
+        {
+            "link1": "GitHub",
+            "link1link": "https://github.com/dashboard",
+            "link2": "LinkedIn",
+            "link2link": "https://www.linkedin.com/in/kayla-dale-336521253",
+            "link3": "PDF download for resume",
+            "link3link": "#####"
+        }
+    ]
+    
+
+}
