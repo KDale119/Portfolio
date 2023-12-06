@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="style.css" />
         <title>Kayla Dale</title>
   </head>
-  <body>
+  <body onload="someThing()">
     <main>
       <!--                    BEGINNING PAGE 1      -->
       <section class="p1">
         <nav class="nav">
-          <div class="navbar2">
-            <h3 class="home">Home</h3>
-            <h3 class="exp">Experience</h3>
+          <div class="navbar2" id="navbarOpts">
+             <!-- <h3 class="home" id="home">Home</h3> -->
+            <!-- <h3 class="exp">Experience</h3>
             <h3 class="blog">Blogs</h3>
-            <h3 class="resume">Resume</h3>
+            <h3 class="resume">Resume</h3> -->
           </div>
         </nav>
         <header class="header">
@@ -41,9 +41,10 @@
       <div class="head">
         <h4>Experience</h4>
       </div>
-      <section class="info">
-        <div class="jobtitle">Mutual of Omaha- Payroll Deduction Specialist</div>
+      <section class="info" id="jobHistory">
         <div>
+        <div class="jobtitle" >Mutual of Omaha- Payroll Deduction Specialist</div>
+        
           <ul class="jobdesc">
             <li class="li">
               Receive, analyze, and process incoming inquiries from external
@@ -57,7 +58,7 @@
               Process life/health retiree payments from Mutual of Omaha
               retirement pensions
             </li class="li">
-            <li>Build/Monitor multiple spreadsheets</li>
+            <li >Build/Monitor multiple spreadsheets</li>
             <li class="li">
               Monitor multiple inboxes to ensure positive relations between
               Mutual of Omaha and our customers.
@@ -69,7 +70,7 @@
           </ul>
         </div>
         <!--                           2ND LIST OF EXPERIENCE     -->
-        <div class="jobtitle">Mutual of Omaha- Customer Care Analyst</div>
+        <div class="jobtitle" >Mutual of Omaha- Customer Care Analyst</div>
         <div>
           <ul class="jobdesc">
             <li li class="li">
@@ -92,7 +93,7 @@
           </ul>
         </div>
         <!--                           3RD LIST OF EXPERIENCE     -->
-        <div class="jobtitle">Paycheck Advance- Store Manager</div>
+        <div class="jobtitle" id=>Paycheck Advance- Store Manager</div>
         <div>
           <ul class="jobdesc">
             <li li class="li"> 
@@ -124,13 +125,15 @@
       </section>
       <section>
         <aside class="buttons">
-          <div><button class="btns journey">Journey to Coding</button></div>
-          <div><button class="btns">Coffee</button></div>
-          <div><button class="btns">Benefits of House Plants</button></div>
-          <div><button class="btns">Benefits of Learning Alone</button></div>
-          <div><button class="btns">Benefits of Reading</button></div>
-          <div><button class="btns">Balance of work/home life </button></div>
-          <div><button class="btns">log heremore stuff</button></div>
+          <div id="buttons">
+          <div class="btn"><button class="btns journey">Journey to Coding</button></div>
+          <div class="btn"><button class="btns">Coffee</button></div>
+          <div class="btn"><button class="btns">Benefits of House Plants</button></div>
+          <div class="btn"><button class="btns">Benefits of Learning Alone</button></div>
+          <div class="btn"><button class="btns">Benefits of Reading</button></div>
+          <div class="btn"><button class="btns">Balance of work/home life </button></div>
+          <div class="btn"><button class="btns">log heremore stuff</button></div>
+        </div>
         </aside>
       </section>
       <!--                         ENDING OF PAGE 3      -->
