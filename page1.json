@@ -1,22 +1,22 @@
 {
     "navbarOpts" : [
         {
-            "opt1": "home",
+            "opt1": "Home",
             "link": "#home"
             
         },
         {
-            "opt1": "exp",
+            "opt1": "Experience",
             "link": "#experience"
             
         },
         {
-            "opt1": "blog",
+            "opt1": "Blogs",
             "link": "#blogs"
             
         },
         {
-            "opt1": "resume",
+            "opt1": "Resume",
             "link": "#resume"
             
         }
@@ -31,12 +31,18 @@
     "links" : [
         {
             "link1": "GitHub",
-            "link1link": "https://github.com/dashboard",
+            "linklink": "https://github.com/dashboard"
+        },
+            
+        { 
             "link2": "LinkedIn",
-            "link2link": "https://www.linkedin.com/in/kayla-dale-336521253",
+            "linklink": "https://www.linkedin.com/in/kayla-dale-336521253"
+        },
+        {
             "link3": "PDF download for resume",
-            "link3link": "#####"
+            "linklink": "#####"
         }
+        
     ]
     
 

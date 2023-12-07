@@ -12,9 +12,9 @@
     ],
     "Footer": [
         {
-            "creator": "Kayla Dale",
-            "contact-info": "kdale@mcc.neb.edu",
-            "copyright": "Kayla Dale 2023"
+            "creator": "Creator: Kayla Dale",
+            "contactInfo": "Contact: kdale@mcc.neb.edu",
+            "copyright": " &copy; Kayla Dale 2023"
         }
     ]
-}
+} 
