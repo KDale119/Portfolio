@@ -21,13 +21,17 @@
             
         }
     ],
+
+
     "Heading" : [
         {
             "header": "I'm Kayla Dale",
-            "qualities": "Creative, Driven & eager to learn"
+            "qualities": "Creative, Driven & Eager to learn"
             
         }
     ],
+
+
     "links" : [
         {
             "link1": "GitHub",
@@ -40,7 +44,7 @@
         },
         {
             "link3": "PDF download for resume",
-            "linklink": "#####"
+            "linklink": "./PDF/Kayla Dale 2023 PDF.pdf"
         }
         
     ]

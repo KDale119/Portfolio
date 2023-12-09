@@ -49,10 +49,8 @@
     ],
     "blog": [
         {
-            "img": "Images/journey.png"
-        },
-        {
-            "paragraph": "I started learning to code only because my husband told me I should find a hobby, something that would keep be busy besides shoving my face in a book. I thought back to high school where I took a computer class on HTML & it got me wondering. If it could keep a 15-year-old high school girl intrigued, barely even touching the surface, what else is there? I first started looking into HTML on popular websites like W3 Schools, codacademy & YouTube tutorials. Graduating to CSS about 3 months later I was now learning how to correlate the 2 together. This is where I really started to get invested. I found myself researching random thoughts & ideas that would come to mind almost every day after. 6-7 months later is when I discovered hey I could really go somewhere with this. Being 24 & still not finding a career I love was starting to seem like a dream until I met with a talent acquisition member in my current employer’s HR department. This is where I was told all about their program through Metropolitan Community College where once completed, I could immediately start employment in a new position within I/S doing coding. Best decision I’ve ever made."
+            "img": "Images/journey.png",
+            "paragraph": "I started learning to code only because my husband told me I should find a hobby, something that would keep be busy besides shoving my face in a book. I thought back to high school where I took a computer class on HTML & it got me wondering. If it could keep a 15-year-old high school girl intrigued, barely even touching the surface, what else is there? <br><br> I first started looking into HTML on popular websites like W3 Schools, codacademy & YouTube tutorials. Graduating to CSS about 3 months later I was now learning how to correlate the 2 together. This is where I really started to get invested. I found myself researching random thoughts & ideas that would come to mind almost every day after. 6-7 months later is when I discovered hey I could really go somewhere with this. <br><br> Being 24 & still not finding a career I love was starting to seem like a dream until I met with a talent acquisition member in my current employer’s HR department. This is where I was told all about their program through Metropolitan Community College where once completed, I could immediately start employment in a new position within I/S doing coding. Best decision I’ve ever made."
         }
     ]
 

@@ -10,9 +10,27 @@ function someThing() {
         h3.className = opt.opt1
         h3.innerHTML = opt.opt1
         document.getElementById('navbarOpts').appendChild(h3);
-        }
+        }//         NAVBAR
+        
+        let header = document.getElementById('header');
+        for(let head of result.Heading) {
+            let h1 = document.createElement("h1")
+            h1.innerHTML = head.header;
+            header.appendChild(h1);
+        }// my name
 
-        // unsure on links??? Ask 
+        let hPara = document.getElementById('h-paragraph');
+        for(let head of result.Heading) {
+            let p = document.createElement("p")
+            p.innerHTML = head.qualities;
+            hPara.appendChild(p);
+        }// qualities
+
+
+        //how to get icons to be attached to links????
+
+
+
     })
 
 
@@ -28,6 +46,14 @@ function someThing() {
     fetch("./page2.json")
     .then(response => response.json())
     .then(result => {
+        
+        let headr = document.getElementById('head');
+        for(let head of result.Header) {
+            let h4 = document.createElement("h4")
+            h4.innerHTML = head.heading;
+            headr.appendChild(h4);
+        }// experience heading
+
         let section = document.getElementById('jobHistory');
         for (let sect of result.jobHistory) {
             let outDiv = document.createElement('div')
@@ -42,7 +68,7 @@ function someThing() {
 
             ul.className = "jobdesc";
 
-            // this is where i loop
+            // this is where i would loop but found work around ask travis still after turning in
             let li = document.createElement('li')
             li.className = "li";
             li.innerHTML = sect.jobDuties
@@ -53,14 +79,6 @@ function someThing() {
             section.appendChild(outDiv)
         }
         
-        let div = document.getElementById('head')
-        for (let dv of result.Header) {
-
-            let h4 = document.createElement('h4');
-            h4.className = "exp";
-            h4.innerHTML = dv.heading;
-            div.appendChild(h4)
-        } //doesnt work???
     })
 
 
@@ -77,22 +95,38 @@ function someThing() {
     fetch("./page3.json")
     .then(response => response.json())
     .then(result => {
-       for (let btns of result.buttons) {
-        let button = document.createElement('button')
-        button.className = btns;
-        button.innerHTML = btns.title;
-        document.getElementById('buttons').appendChild(button);
-         /// works but looks weird
-        }
 
-        let div = document.getElementById('div')   
-        for (let para of result.blog) {
-            let p = document.createElement('p')
-            p.className = "paragraph";
-            p.innerHTML = para.paragraph; 
-            div.appendChild(p);
-            //works but no line breaks
-        }
+        let hDiv = document.getElementById('m-section');
+        for(let head of result.Header) {
+            let h4 = document.createElement("h4")
+            h4.innerHTML = head.heading;
+            hDiv.appendChild(h4);
+        }//Blogs Header works but no styling
+
+        let imgDiv = document.getElementById('img')
+        for(let div of result.blog) {
+            let img = document.createElement("img");
+            img.setAttribute('src', div.img);
+            imgDiv.appendChild(img);
+        } //coding journey IMG- works needs styling
+
+        let btnsDiv = document.getElementById("buttons");
+       for(let btns of result.buttons){
+        let btn = document.createElement('button')
+        btn.className = 'btns'
+        btn.innerHTML = btns.title;
+        btnsDiv.appendChild(btn);
+       }
+       
+       let pDiv = document.getElementById('div')
+       for(let p of result.blog){
+        let para = document.createElement('p')
+        para.innerHTML = p.paragraph
+        pDiv.appendChild(para);
+       }// Coding journey paragraph works needs styling
+
+
+       
     })
 
 
@@ -108,6 +142,21 @@ function someThing() {
     fetch("./page4.json")
     .then(response => response.json())
     .then(result => {
+
+        let headerDiv = document.getElementById('resume-s')
+        for(let head of result.Header) {
+            let h4 = document.createElement('h4')
+            h4.innerHTML = head.heading;
+            headerDiv.appendChild(h4);
+        }// Resume Header- works needs styling
+
+        let resumeDiv = document.getElementById('resumeview')
+        for(let resume of result.pdfResume){
+            let iframe = document.createElement('iframe')
+            iframe.setAttribute('src', resume.source, frameborder="0");
+            resumeDiv.appendChild(iframe);
+        }// resume PDF- works need styling
+
         let ftr = document.getElementById('footer')
        for( let foot of result.Footer) {
         let p1 = document.createElement('p')

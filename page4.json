@@ -4,7 +4,7 @@
             "heading": "Resume"   
         }
     ],
-    "PDF-Resume" :[
+    "pdfResume" :[
         {
             "PDF": "My resume",
             "source": "/PDF/Kayla Dale 2023 PDF.pdf"

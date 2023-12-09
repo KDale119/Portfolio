@@ -98,12 +98,15 @@
 }
 
 .btns {
+    
+    float: left;
     font-size: 30px;
     border-radius: 10px;
     margin: 5px;
-    width: 75%;
+    width: 15%;
     padding-top: 10px;
     padding-bottom: 10px;
+    float: left;
 }
 .btns:hover {
     cursor: pointer;

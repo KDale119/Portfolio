@@ -1,21 +1,21 @@
 {
     "Header" : [
         {
-            "heading": "experience"   
+            "heading": "Experience"   
         }
     ],
     "jobHistory" : [
         {
             "job": "Mutual of Omaha- Payroll Deduction Specialist",
-            "jobDuties": "Receive analyze and process incoming inquiries from external businesses to enroll new policies. Process insurance payments for companies to ensure continued coverage for internal and external companies. Process life/health retiree payments from Mutual of Omaha retirement pensions Build/Monitor multiple spreadsheets Monitor multiple inboxes to ensure positive relations between Mutual of Omaha and our customers. Organize and review Home Office reports month to month for Mutual of Omaha retirees/current employees."
+            "jobDuties": "Receive analyze and process incoming inquiries from external businesses to enroll new policies. <li> Process insurance payments for companies to ensure continued coverage for internal and external companies. <li> Process life/health retiree payments from Mutual of Omaha retirement pensions Build/Monitor multiple spreadsheets Monitor multiple inboxes to ensure positive relations between Mutual of Omaha and our customers. <li> Organize and review Home Office reports month to month for Mutual of Omaha retirees/current employees."
         },
         {
             "job": "Mutual of Omaha- Customer Care Analyst",
-            "jobDuties": "Receive, analyze, and process incoming inquiries from internal and external customers. Provides exceptional customer service by meeting and exceeding department standards related to customer satisfaction, attendance, productivity, and quality Provides easily understood resolution options with the desired outcome of creating a positive customer experience. Assisted with training new hires by demonstrating best practices, continued coaching and following a new hire curriculum"
+            "jobDuties": "Receive, analyze, and process incoming inquiries from internal and external customers. <li>Provides exceptional customer service by meeting and exceeding department standards related to customer satisfaction, attendance, productivity, and quality Provides easily understood resolution options with the desired outcome of creating a positive customer experience. <li>Assisted with training new hires by demonstrating best practices, continued coaching and following a new hire curriculum"
         },
         {
             "job": "Paycheck Advance- Store Manager",
-            "jobDuties": "Balance the incoming funds with outgoing costs to keep track of the overhead. Manage employees, implemented audits and handle escalations. Debt collection. Process loans daily for customers"
+            "jobDuties": "Balance the incoming funds with outgoing costs to keep track of the overhead. <li>Manage employees, implemented audits and handle escalations. <li>Debt collection. <li>Process loans daily for customers"
         }
     ]
     
