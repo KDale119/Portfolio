@@ -34,17 +34,16 @@
 
     "links" : [
         {
-            "link1": "GitHub",
+            "icons": "fa-brands fa-github git",
             "linklink": "https://github.com/dashboard"
-        },
-            
+        },          
         { 
-            "link2": "LinkedIn",
-            "linklink": "https://www.linkedin.com/in/kayla-dale-336521253"
+            "icons": "fa-brands fa-linkedin linkedin",
+            "link": "https://www.linkedin.com/in/kayla-dale-336521253"
         },
         {
-            "link3": "PDF download for resume",
-            "linklink": "./PDF/Kayla Dale 2023 PDF.pdf"
+            "icons": "fa-solid fa-file-pdf pdf",
+            "link": "./PDF/Kayla Dale 2023 PDF.pdf"
         }
         
     ]

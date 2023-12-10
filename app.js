@@ -27,8 +27,16 @@ function someThing() {
         }// qualities
 
 
-        //how to get icons to be attached to links????
+        
 
+        let section = document.getElementById('icons');
+        for(let sect of result.links) {
+            let outerDiv = document.createElement('div');
+            let i = document.createElement('i')
+            i.className = sect.icons;
+            section.appendChild(outerDiv);
+            outerDiv.appendChild(i);
+        }
 
 
     })
