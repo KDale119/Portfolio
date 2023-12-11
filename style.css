@@ -65,7 +65,7 @@
     transform: scale(1.3);
     transition: ease-in-out 0.7s;
 }
-.head {
+#head {
     display: flex;
     justify-content: center;
     font-size: 50px;
@@ -97,22 +97,24 @@
     float: left;
 }
 
-.btns {
-    
+/* page 3                 */
+.buttons, .btns {
+    display: block;
     float: left;
     font-size: 30px;
     border-radius: 10px;
     margin: 5px;
-    width: 15%;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
-    float: left;
+    
 }
 .btns:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    transition: ease-in-out 0.7s;
+    
 }
+
+
 .blogs {
     display: flex;
     justify-content: center;
@@ -124,6 +126,7 @@
 .journeyimg {
     width: 44%;
     padding-left: 400px;
+    
 }
 .paragraph {
     font-size: 20px;
@@ -134,7 +137,7 @@
     
 }
 
-/*                                PAGE 3         */
+/*                                PAGE 4         */
  .resume-s {
     float: center;
     font-size: 50px;
