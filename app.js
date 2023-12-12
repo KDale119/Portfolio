@@ -7,7 +7,7 @@ function someThing() {
        // document.getElementById('home').innerHTML = result.navbarOpts[0].opt1
        for (let opt of result.navbarOpts) {
         let h3 = document.createElement('h3')
-        h3.className = opt.opt1
+        h3.className = "opt.opt1"
         h3.innerHTML = opt.opt1
         document.getElementById('navbarOpts').appendChild(h3);
         }//         NAVBAR
