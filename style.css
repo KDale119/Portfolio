@@ -258,7 +258,17 @@
     }
     .hamMenuHeaders {
         color: rgb(255, 249, 249);
+        list-style: none;
+        padding: 200px;
     }
+    .hamMenuHeaders li:hover {
+        transform: scale(1.3);
+        transition: ease 2s;
+    }
+    .hamMenuHeaders li {
+        padding: 20px;
+    }
+
     .header {
         font-size: 30px;
         display: flex;
