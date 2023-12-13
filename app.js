@@ -32,12 +32,13 @@ function someThing() {
         
 
         let section = document.getElementById('icons');
+        let div = document.createElement('div')
+        
         for(let sect of result.links) {
-            let outerDiv = document.createElement('div');
             let i = document.createElement('i')
             i.className = sect.icons, "icons";
-            section.appendChild(outerDiv);
-            outerDiv.appendChild(i);
+            section.appendChild(div);
+            div.appendChild(i);
         }// styling not present wont work????
 
 

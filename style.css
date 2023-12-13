@@ -10,7 +10,7 @@
 .header {
     display: flex;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 100px;
     font-size: 50px;
 }
 .h-paragraph {
@@ -18,6 +18,7 @@
     justify-content: center;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 100px;
 }
 
 /*                                NAVIGATION         */
@@ -30,12 +31,18 @@
 
 /*                                ICONS         */
 .icons {
-    font-size: 45px;
+    font-size: 50px;
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
-}  /*need styling */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    word-spacing: 200px;
+}  
 
+.git, .linkedin, .pdf {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .git:hover, .linkedin:hover, .pdf:hover {
     cursor: pointer;
     transform: scale(1.3);
@@ -175,7 +182,12 @@
     .nav {
         display: none;
     }
-    /* .offScreen {
+    .mobile-nav {
+        padding: 1rem;
+        display: flex;
+        background-color: rgb(61, 61, 61);
+    }
+    .offScreen {
         background-color: black;
         height: 100vh;
         width: 100%;
@@ -194,22 +206,22 @@
     .offScreen.active {
         right: 0;
     }
-    .mobile-nav {
-        padding: 1rem;
-        display: flex;
-        background-color: rgb(61, 61, 61);
-    }
+    
     .ham-menu {
+        display: block;
         height: 50px;
         width: 50px;
         margin-left: auto;
         position: relative;
     }
     .ham-menu span {
-        height: 10px;
+        display: block;
+        height: 2px;
         width: 100%;
         background: purple;
-    } */
+
+        
+    }
     .header {
         font-size: 30px;
         display: flex;
