@@ -11,26 +11,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kayla Dale</title>
   </head>
-  <body onload="someThing()">
+  <body onload="someThing()" onresize="hamMenu()">
     <main>
       <!--                    BEGINNING PAGE 1      -->
       <section class="p1">
-        <div class="mobile-nav">
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div>
+          <div class="mobile-nav">
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="offScreen">
+            <ul class="hamMenuHeaders">
+              <li>Home</li>
+              <li>Experience</li>
+              <li>Blogs</li>
+              <li>Resume</li>
+            </ul>
           </div>
         </div>
-        <div class="offScreen">
-          <ul>
-            <li>Home</li>
-            <li>Experience</li>
-            <li>Blogs</li>
-            <li>Resume</li>
-          </ul>
-        </div>
-
         <nav class="nav">
           <div class="navbar2" id="navbarOpts">
             <!-- <h3 class="home" id="home">Home</h3> -->
@@ -47,18 +48,7 @@
           <p class="h-paragraph"></p>
         </section>
 
-        <section class="icons" id="icons">
-          <!-- <i class="fa-brands fa-github git" style="color: #030303">
-              <a href="https://github.com/dashboard"></a>
-            </i>
-
-            <i class="fa-brands fa-linkedin linkedin">
-              <a href="https://www.linkedin.com/in/kayla-dale-336521253"></a>
-            </i>
-            <i class="fa-solid fa-file-pdf pdf">
-              <a href="./PDF/Kayla Dale 2023 PDF.pdf"></a>
-            </i> -->
-        </section>
+        <section class="icons" id="icons"></section>
       </section>
       <!--                    ENDING PAGE 1      -->
       <!--                    BEGINNING PAGE 2*      -->
@@ -67,71 +57,7 @@
         <h4 class="exp"></h4>
       </div>
 
-      <section class="info" id="jobHistory">
-        <!-- <div>
-        <div class="jobtitle" >Mutual of Omaha- Payroll Deduction Specialist</div>
-        
-          <ul class="jobdesc">
-            <li class="li">
-              Receive, analyze, and process incoming inquiries from external
-              businesses to enroll new policies
-            </li>
-            <li class="li">
-              Process insurance payments for companies to ensure continued
-              coverage for internal and external companies
-            </li>
-            <li class="li">
-              Process life/health retiree payments from Mutual of Omaha
-              retirement pensions
-            </li class="li">
-            <li >Build/Monitor multiple spreadsheets</li>
-            <li class="li">
-              Monitor multiple inboxes to ensure positive relations between
-              Mutual of Omaha and our customers.
-            </li>
-            <li class="li">
-              Organize and review Home Office reports month to month for Mutual
-              of Omaha retirees/current employees
-            </li>
-          </ul>
-        </div> -->
-        <!--                           2ND LIST OF EXPERIENCE     -->
-        <!-- <div class="jobtitle" >Mutual of Omaha- Customer Care Analyst</div>
-        <div>
-          <ul class="jobdesc">
-            <li li class="li">
-              Receive, analyze, and process incoming inquiries from internal and
-              external customers
-            </li>
-            <li li class="li">
-              Provides exceptional customer service by meeting and exceeding
-              department standards related to customer satisfaction, attendance,
-              productivity, and quality
-            </li>
-            <li li class="li">
-              Provides easily understood resolution options with the desired
-              outcome of creating a positive customer experience
-            </li>
-            <li li class="li">
-              Assisted with training new hires by demonstrating best practices,
-              continued coaching and following a new hire curriculum
-            </li>
-          </ul>
-        </div> -->
-        <!--                           3RD LIST OF EXPERIENCE     -->
-        <!-- <div class="jobtitle" id=>Paycheck Advance- Store Manager</div>
-        <div>
-          <ul class="jobdesc">
-            <li li class="li"> 
-              Balance the incoming funds with outgoing costs to keep track of
-              the overhead
-            </li>
-            <li li class="li">Manage employees, implemented audits and handle escalations</li>
-            <li li class="li">Debt collection</li>
-            <li li class="li">Process loans daily for customers</li>
-          </ul>
-        </div>  -->
-      </section>
+      <section class="info" id="jobHistory"></section>
       <!--                    ENDING PAGE 2*      -->
       <!--                         BEGINNING OF PAGE 3      -->
       <section>
@@ -141,26 +67,11 @@
 
         <div id="buttons" class="buttons"></div>
 
-        <div id="img">
-          <!-- <img
-              src="Images/journey.png"
-              alt="coding journey"
-              class="journeyimg"
-            /> -->
-        </div>
+        <div id="img"></div>
 
         <div id="div">
           <p class="paragraph"></p>
         </div>
-        <!-- <aside class="buttons">
-          <div><button class="btns journey">Journey to Coding</button></div>
-          <div><button class="btns">Coffee</button></div>
-          <div><button class="btns">Benefits of House Plants</button></div>
-          <div><button class="btns">Benefits of Learning Alone</button></div>
-          <div><button class="btns">Benefits of Reading</button></div>
-          <div><button class="btns">Balance of work/home life</button></div>
-          <div><button class="btns">log heremore stuff</button></div>
-        </aside> -->
       </section>
 
       <!--                         ENDING OF PAGE 3      -->
@@ -170,13 +81,7 @@
           <h4 class="h-resume"></h4>
         </div>
 
-        <div class="resumeview" id="resumeview">
-          <!-- <iframe
-            class="adobepdf"
-            src="/PDF/Kayla Dale 2023 PDF.pdf"
-            frameborder="0"
-          ></iframe> -->
-        </div>
+        <div class="resumeview" id="resumeview"></div>
       </section>
 
       <footer class="footer" id="footer">

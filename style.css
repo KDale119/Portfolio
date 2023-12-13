@@ -194,7 +194,7 @@
     .mobile-nav {
         padding: 1rem;
         display: flex;
-        background-color: rgb(61, 61, 61);
+        background-color: rgba(8, 8, 8, 0);
     }
     .offScreen {
         background-color: black;
@@ -221,15 +221,43 @@
         height: 50px;
         width: 50px;
         margin-left: auto;
+        cursor: pointer;
         position: relative;
     }
     .ham-menu span {
         display: block;
-        height: 2px;
+        height: 5px;
         width: 100%;
-        background: purple;
-
-        
+        background: rgb(0, 0, 0);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        z-index: 2;
+    }
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: rgb(255, 253, 253)
+    }
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background: rgb(255, 253, 253)
+    }
+    .hamMenuHeaders {
+        color: rgb(255, 249, 249);
     }
     .header {
         font-size: 30px;
@@ -292,7 +320,7 @@
         
         font-size: 30px;
         padding-left: 0;
-           
+     
      }
      
      .adobepdf {
