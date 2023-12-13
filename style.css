@@ -98,46 +98,54 @@
 }
 
 .buttons {
-    padding-top: 200px;
     float: left;
+    padding-bottom: 400px;
 }
 
 /* page 3                 */
 .buttons, .btns {
     display: block;
-    float: left;
     font-size: 30px;
     border-radius: 10px;
-    margin: 5px;
-    width: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 300px;
     
 }
 .btns:hover {
     cursor: pointer;
-    
+    background-color: rgb(172, 169, 169);
 }
-
+.btns {
+    margin: 15px;
+}
 
 .blogs {
     display: flex;
     justify-content: center;
     font-size: 50px;
+    padding-left: 250px;
 }
 .journey {
     background-color: rgb(184, 179, 179);
 }
+#img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .journeyimg {
-    width: 44%;
-    padding-left: 400px;
+    width: 45%;
+    
+    
 }
 .paragraph {
     font-size: 20px;
     padding-right: 25px;
+    padding-left: 25px;
     padding-top: 20px;
     padding-bottom: 80px;
     word-spacing: 7px;
+    
+    
     
 }
 
@@ -146,6 +154,7 @@
     display: flex;
     justify-content: center;
     font-size: 50px;  
+    padding-right: 70px;
  }
  
  .adobepdf {
@@ -226,7 +235,7 @@
         font-size: 30px;
         display: flex;
         justify-self: center;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
     .h-paragraph {
         display: flex;
@@ -239,7 +248,7 @@
         font-size: 30px;
         display: flex;
         justify-content: space-evenly;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
 
     /* page 2        */

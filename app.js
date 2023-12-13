@@ -39,7 +39,7 @@ function someThing() {
             i.className = sect.icons, "icons";
             section.appendChild(div);
             div.appendChild(i);
-        }// styling not present wont work????
+        }// works
 
 
     })
