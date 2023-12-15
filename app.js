@@ -191,9 +191,6 @@ function arrowClicked(){
         let newBlog = result.buttons[blogPosition].desc
         let paragraph = document.getElementById('blogP')
         paragraph.innerHTML = newBlog;
-
-        
-        
     })
 }
 
