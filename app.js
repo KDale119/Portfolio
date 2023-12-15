@@ -1,4 +1,7 @@
 // sticky for navbar
+let blogPosition = 0;
+
+
 function someThing() {
 
     fetch("./page1.json")
@@ -95,9 +98,10 @@ function someThing() {
             hDiv.appendChild(h4);
         }//Blogs Header has styling
 
-        let imgDiv = document.getElementById('img')
+        let imgDiv = document.getElementById('imgDiv')
         for(let div of result.blog) {
             let img = document.createElement("img");
+            img.id = "img";
             img.className = "journeyimg"
             img.setAttribute('src', div.img);
             imgDiv.appendChild(img);
@@ -114,6 +118,7 @@ function someThing() {
        let pDiv = document.getElementById('div')
        for(let p of result.blog){
         let para = document.createElement('p')
+        para.id = "blogP";
         para.className = "paragraph"
         para.innerHTML = p.paragraph
         pDiv.appendChild(para);
@@ -167,8 +172,28 @@ function hamMenu() {
     let hamMenu = document.querySelector('.ham-menu')
     let offScreenMenu = document.querySelector('.offScreen')
 
-    hamMenu.addEventListener('click', () => {
+    
         hamMenu.classList.toggle('active');
         offScreenMenu.classList.toggle('active');
+    //check toggle
+
+}
+
+function arrowClicked(){
+    fetch("./page3.json")
+    .then(response => response.json())
+    .then(result => {
+
+        let newPic = result.buttons[++blogPosition].img
+        let img = document.getElementById('img');
+        img.setAttribute('src', newPic)
+
+        let newBlog = result.buttons[blogPosition].desc
+        let paragraph = document.getElementById('blogP')
+        paragraph.innerHTML = newBlog;
+
+        
+        
     })
 }
+

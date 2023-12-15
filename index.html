@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kayla Dale</title>
   </head>
-  <body onload="someThing()" onresize="hamMenu()">
+  <body onload="someThing()">
     <main>
       <!--                    BEGINNING PAGE 1      -->
       <section class="p1">
         <div>
           <div class="mobile-nav">
-            <div class="ham-menu">
+            <div class="ham-menu" onclick="hamMenu()">
               <span></span>
               <span></span>
               <span></span>
@@ -67,11 +67,13 @@
 
         <div id="buttons" class="buttons"></div>
 
-        <div id="img"></div>
-
-        <div id="div">
-          <p class="paragraph"></p>
+        <div id="imgDiv"></div>
+        <!--                   mobile arrow button -->
+        <div class="mobileButton" onclick="arrowClicked()">
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
+
+        <div id="div"></div>
       </section>
 
       <!--                         ENDING OF PAGE 3      -->

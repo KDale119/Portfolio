@@ -12,32 +12,32 @@
             },
             {
                 "title": "Coffee",
-                "desc": "words here",
-                "img" : " " 
+                "desc": "Are you a coffee lover? Do you need that caffeine fix to start your day? If you’re one of the 75 percent of American adults that drink coffee, you may be surprised it’s more than a delicious beverage. It has a range of health benefits too! <br><br>From energy boosts, reduced risk of disease, and improved cognitive function, coffee can be a powerhouse of perks. So grab a cup of joe, and let’s explore these health benefits!<br><br>Studies have shown that drinking coffee may reduce type 2 diabetes risk. This may be due to coffee's ability to improve insulin sensitivity and glucose metabolism. In fact, drinking one cup of coffee per day may reduce risk of type 2 diabetes by up to 7 percent.<br><br>Coffee also has protective effects on the liver. Studies have found that drinking coffee may lower risk of liver cancer, cirrhosis, and fatty liver disease. This protective effect is related to coffee’s ability to reduce inflammation and improve liver function. In fact, a recent study shows that drinking three or four cups of daily java has the most benefit!",
+                "img" : "Images/coffee.jpg" 
             },
             
             {
                 "title": "Benefit of House Plants",
-                "desc": "words here",
-                "img" : " " 
+                "desc": "Many people enjoy living and working in cultivated greenspaces, and most like having beautiful plants around. But is there more to it? Here are seven benefits science says indoor plants may provide. In a small study involving 23 participants, researchers put students in a classroom with either a fake plant, a real one, a photograph of a plant, or no plant at all. Brain scans of the participants showed that the students who studied with real, live plants in the classroom were more attentive and better able to concentrate than students in the other groups. For people experiencing the symptoms of mental illness, indoor gardening can be helpful.<br><br>Researchers Trusted Source have used horticultural therapy to increase feelings of well-being among people with depression, anxiety, dementia, and other conditions.<br><br>",
+                "img" : "Images/plant.jpg" 
             },
             
             {
                 "title" : "Benefits of Learning Alone",
-                "desc": "words here",
-                "img" : " " 
+                "desc": "Self-paced learning allows students to learn at their own pace and schedule. Unlike traditional learning, students are not required to complete the same assignments or learn at the same time as their peers. Instead, they can progress through different topics or segments at their own pace and speed.<br><br>Coercive teaching is no longer effective. The traditional model of higher education with rote memorization, lack of student exposure, undemanding curriculum, and lack of freedom to learn are looked down upon. This has often stopped students from acquiring the sophisticated reasoning and problem-solving abilities necessary for daily life. What if all students received the necessary training to become independent, self-directed learners?<br><br>Self-paced learning is an approach to education in which the student has control over the speed and timing of their learning. In this model, students can set their own schedule, and they can progress through the course material at their own pace, without being restricted by a rigid class schedule or deadlines.",
+                "img" : "Images/learning.png" 
             },
            
             {
                 "title": "Benefits of Reading",
-                "desc": "words here",
-                "img" : " " 
+                "desc": "There's nothing like the smell of old books or the crack of a new one's spine. As it turns out, diving into a page-turner can also offer benefits for your health and happiness. There's nothing like the glow of a desk lamp on white pages. Although more and more people own e-books and subscribe to services like Audible on Amazon, it seems safe to say that real books aren't going anywhere yet, and these benefits of reading are here to stay. Eighty-eight percent of the Americans who read e-books continue to read printed ones as well. And while we're all for the convenience of digital downloads and a lighter load, we can't bring ourselves to part with the joy of a good old-fashioned book. When we talk about healthy habits, we might as well add reading books to the list. Exposure to vocabulary through reading (particularly reading children's books) not only leads to higher score on reading tests, but also higher scores on general tests of intelligence for children. Plus, stronger early reading skills may mean higher intelligence later in life.",
+                "img" : "Images/reading.jpg" 
             },
             
             {
                 "title": "Work From Home Life",
-                "desc": "words here",
-                "img" : " " 
+                "desc": "47% of leaders who intend to not offer remote work options say it’s because remote work is bad for employee well-being. Executives trying to get workers to return to the office say remote and hybrid work lead to a sense of social isolation, meaninglessness, and lack of work-life boundaries, so we should just all go back to office-centric work.<br><br>For instance, Google’s leadership is defending its requirement of mostly in-office work for all staff as necessary to protect social capital, meaning people’s connections to and trust in one another. That’s despite a survey of over 1,000 Google employees showing that two-thirds feel unhappy about being forced to work in the office three days per week. In internal meetings and public letters, many have threatened to leave, and some are already quitting to go to other companies with more flexible options.<br><br>For their claims that remote work hurts well-being, some of these office-centric traditionalists cite several prominent articles. An article in Forbes reported that over two-thirds of employees who work from home at least part of the time had trouble getting away from work at the end of the day. And Fast Company has a piece about how remote work can “exacerbate existing mental health issues” like depression and anxiety.",
+                "img" : "Images/WFH.jpg" 
             },
             
             {
