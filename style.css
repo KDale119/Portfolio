@@ -65,7 +65,22 @@
 .ham-menu{
     display: none;
 }
-.home:hover {
+.Home:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: ease-in-out 0.7s;
+}
+.Experience:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: ease-in-out 0.7s;
+}
+.Blogs:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: ease-in-out 0.7s;
+}
+.Resume:hover {
     cursor: pointer;
     transform: scale(1.3);
     transition: ease-in-out 0.7s;
@@ -338,6 +353,7 @@
         float: right;
     }
     .fa-arrow-right {
+        display: block;
         border: solid black 2px;
         border-radius: 50px;
         

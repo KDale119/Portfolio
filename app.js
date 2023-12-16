@@ -10,9 +10,15 @@ function someThing() {
        // document.getElementById('home').innerHTML = result.navbarOpts[0].opt1
        for (let opt of result.navbarOpts) {
         let h3 = document.createElement('h3')
-        h3.className = "opt.opt1"
+        h3.className = opt.opt1
         h3.innerHTML = opt.opt1
         document.getElementById('navbarOpts').appendChild(h3);
+
+        h3.id = 'home';
+
+        let link = document.createElement('a')
+        link.setAttribute('href', opt.link)
+        h3.appendChild(link);
         }//         NAVBAR
         
         let header = document.getElementById('header');
@@ -55,6 +61,7 @@ function someThing() {
         let headr = document.getElementById('head');
         for(let head of result.Header) {
             let h4 = document.createElement("h4")
+            h4.id = 'experience';
             h4.innerHTML = head.heading;
             headr.appendChild(h4);
         }// experience heading
@@ -93,6 +100,7 @@ function someThing() {
         let hDiv = document.getElementById('m-section');
         for(let head of result.Header) {
             let h4 = document.createElement("h4")
+            h4.id = 'blogs'
             h4.className = "blogs"
             h4.innerHTML = head.heading;
             hDiv.appendChild(h4);
@@ -132,6 +140,7 @@ function someThing() {
         let headerDiv = document.getElementById('resume-s')
         for(let head of result.Header) {
             let h4 = document.createElement('h4')
+            h4.id = 'resume'
             h4.className = "resume-s";
             h4.innerHTML = head.heading;
             headerDiv.appendChild(h4);
