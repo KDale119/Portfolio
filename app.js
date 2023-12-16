@@ -46,8 +46,14 @@ function someThing() {
         for(let sect of result.links) {
             let i = document.createElement('i')
             i.className = sect.icons, "icons";
+            
             section.appendChild(div);
             div.appendChild(i);
+
+            //doesnt work either???
+            let link = document.createElement('a')
+            link.setAttribute('href', sect.link)
+            i.appendChild(link)
         }// works
 
 
@@ -152,7 +158,7 @@ function someThing() {
             iframe.className = "adobepdf";
             iframe.setAttribute('src', resume.source);
             resumeDiv.appendChild(iframe);
-        }// resume PDF- styled but weird line- ask travis
+        }// resume PDF
 
         let ftr = document.getElementById('footer')
        for( let foot of result.Footer) {
@@ -176,6 +182,7 @@ function someThing() {
     })
 }
 
+
 function randomPic() {
     fetch('https://dog.ceo/api/breeds/image/random', {method: "GET"})
     .then(response => response.json())
@@ -192,39 +199,53 @@ function randomPic() {
 
 
 
-
-
-
-
-
-
-
-
-
 // mobile ham menu
 function hamMenu() {
     let hamMenu = document.querySelector('.ham-menu')
     let offScreenMenu = document.querySelector('.offScreen')
-
-    
         hamMenu.classList.toggle('active');
         offScreenMenu.classList.toggle('active');
-    //check toggle
-
 }
 
-function arrowClicked(){
+function rightArrow(){
     fetch("./page3.json")
     .then(response => response.json())
     .then(result => {
-
         let newPic = result.buttons[++blogPosition].img
         let img = document.getElementById('img');
         img.setAttribute('src', newPic)
-
+        
         let newBlog = result.buttons[blogPosition].desc
         let paragraph = document.getElementById('blogP')
         paragraph.innerHTML = newBlog;
+
+        if(blogPosition == 5) {
+            let change = document.getElementById('rightArrow')
+            change.style.color = "gray"
+            change.style.border = " solid gray 2px"
+        } //else if (blogPosition < 5){
+        //     change.style.color = "black"
+        // }
+        
+    })
+}
+function leftArrow(){
+    fetch("./page3.json")
+    .then(response => response.json())
+    .then(result => {
+        let newPic = result.buttons[--blogPosition].img
+        let img = document.getElementById('img');
+        img.setAttribute('src', newPic)
+        
+        let newBlog = result.buttons[blogPosition].desc
+        let paragraph = document.getElementById('blogP')
+        paragraph.innerHTML = newBlog;
+        
+        if(blogPosition > 0) {
+            let change = document.getElementById('leftArrow')
+            change.style.color = "black"
+        }
+
     })
 }
 

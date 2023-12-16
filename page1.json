@@ -35,7 +35,7 @@
     "links" : [
         {
             "icons": "fa-brands fa-github git",
-            "linklink": "https://github.com/dashboard"
+            "link": "https://github.com/dashboard"
         },          
         { 
             "icons": "fa-brands fa-linkedin linkedin",

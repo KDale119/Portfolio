@@ -69,8 +69,9 @@
 
         <div id="imgDiv"></div>
         <!--                   mobile arrow button -->
-        <div class="mobileButton" onclick="arrowClicked()">
-          <i class="fa-solid fa-arrow-right"></i>
+        <div class="mobileButton">
+          <i class="fa-solid arrows fa-arrow-left" id="leftArrow" onclick="leftArrow()"></i>
+          <i class="fa-solid arrows fa-arrow-right" id="rightArrow" onclick="rightArrow()"></i>
         </div>
 
         <div id="div"></div>
@@ -88,10 +89,10 @@
       <section class="bonus">
         <form>
           <div>
-            <h4 id="joke"></h4>
+            <h4 id="randompic"></h4>
           </div>
           <div>
-            <img src="" alt="dog" id="pic" />
+            <img src="" alt="" id="pic" />
           </div>
           <div>
             <input type="submit" value="Get new pic" onclick="randomPic()" />
