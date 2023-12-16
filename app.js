@@ -176,6 +176,31 @@ function someThing() {
     })
 }
 
+function randomPic() {
+    fetch('https://dog.ceo/api/breeds/image/random', {method: "GET"})
+    .then(response => response.json())
+    .then(result => 
+        {
+            let pic = document.getElementById('pic')
+            pic.setAttribute('src', result.message);   
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // mobile ham menu
 function hamMenu() {
     let hamMenu = document.querySelector('.ham-menu')

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kayla Dale</title>
   </head>
-  <body onload="someThing()">
+  <body onload="someThing()" onload="randomPic()">
     <main>
       <!--                    BEGINNING PAGE 1      -->
       <section class="p1">
@@ -84,6 +84,19 @@
         </div>
 
         <div class="resumeview" id="resumeview"></div>
+      </section>
+      <section class="bonus">
+        <form>
+          <div>
+            <h4 id="joke"></h4>
+          </div>
+          <div>
+            <img src="" alt="dog" id="pic" />
+          </div>
+          <div>
+            <input type="submit" value="Get new pic" onclick="randomPic()" />
+          </div>
+        </form>
       </section>
 
       <footer class="footer" id="footer">
