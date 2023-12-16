@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kayla Dale</title>
   </head>
-  <body onload="someThing()" onload="randomPic()">
+  <body onload="someThing()" ondblclick="randomPic()">
     <main>
       <!--                    BEGINNING PAGE 1      -->
       <section class="p1">
@@ -70,8 +70,16 @@
         <div id="imgDiv"></div>
         <!--                   mobile arrow button -->
         <div class="mobileButton">
-          <i class="fa-solid arrows fa-arrow-left" id="leftArrow" onclick="leftArrow()"></i>
-          <i class="fa-solid arrows fa-arrow-right" id="rightArrow" onclick="rightArrow()"></i>
+          <i
+            class="fa-solid arrows fa-arrow-left"
+            id="leftArrow"
+            onclick="leftArrow()"
+          ></i>
+          <i
+            class="fa-solid arrows fa-arrow-right"
+            id="rightArrow"
+            onclick="rightArrow()"
+          ></i>
         </div>
 
         <div id="div"></div>
@@ -88,14 +96,19 @@
       </section>
       <section class="bonus">
         <form>
-          <div>
-            <h4 id="randompic"></h4>
+          <h4 id="randompic" class="bonusPic">BONUS</h4>
+          <div class="randompic">
+            <div>
+              <img src="" alt="" id="pic" class="pic" />
+            </div>
           </div>
-          <div>
-            <img src="" alt="" id="pic" />
-          </div>
-          <div>
-            <input type="submit" value="Get new pic" onclick="randomPic()" />
+          <div class="dblclick">
+            <input
+              type="submit"
+              value="double click for cute pics"
+              ondblclick="randomPic()"
+              class="click"
+            />
           </div>
         </form>
       </section>
