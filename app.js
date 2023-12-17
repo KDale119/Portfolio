@@ -10,16 +10,17 @@ function someThing() {
     .then(result => {
        // document.getElementById('home').innerHTML = result.navbarOpts[0].opt1
        for (let opt of result.navbarOpts) {
+        let link = document.createElement('a')
+        link.setAttribute('href', opt.link)
         let h3 = document.createElement('h3')
         h3.className = opt.opt1
         h3.innerHTML = opt.opt1
-        document.getElementById('navbarOpts').appendChild(h3);
+        document.getElementById('navbarOpts').appendChild(link);
+        link.appendChild(h3);
 
         h3.id = 'home';
 
-        let link = document.createElement('a')
-        link.setAttribute('href', opt.link)
-        h3.appendChild(link);
+        
         }//         NAVBAR
         
         let header = document.getElementById('header');
@@ -45,17 +46,13 @@ function someThing() {
         let div = document.createElement('div')
         
         for(let sect of result.links) {
-            
-            let i = document.createElement('i')
-            i.className = sect.icons, "icons";
-            
-            section.appendChild(div);
-            div.appendChild(i);
-
-            //doesnt work either???
             let link = document.createElement('a')
             link.setAttribute('href', sect.link)
-            i.appendChild(link)
+            let i = document.createElement('i')
+            i.className = sect.icons, "icons";
+            section.appendChild(div);
+            div.appendChild(link);
+            link.appendChild(i)
         }// works
 
 
