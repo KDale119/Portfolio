@@ -1,4 +1,7 @@
 // sticky for navbar
+let blogPosition = 0;
+
+
 function someThing() {
 
     fetch("./page1.json")
@@ -10,6 +13,12 @@ function someThing() {
         h3.className = opt.opt1
         h3.innerHTML = opt.opt1
         document.getElementById('navbarOpts').appendChild(h3);
+
+        h3.id = 'home';
+
+        let link = document.createElement('a')
+        link.setAttribute('href', opt.link)
+        h3.appendChild(link);
         }//         NAVBAR
         
         let header = document.getElementById('header');
@@ -32,13 +41,20 @@ function someThing() {
         
 
         let section = document.getElementById('icons');
+        let div = document.createElement('div')
+        
         for(let sect of result.links) {
-            let outerDiv = document.createElement('div');
             let i = document.createElement('i')
             i.className = sect.icons, "icons";
-            section.appendChild(outerDiv);
-            outerDiv.appendChild(i);
-        }// styling not present wont work????
+            
+            section.appendChild(div);
+            div.appendChild(i);
+
+            //doesnt work either???
+            let link = document.createElement('a')
+            link.setAttribute('href', sect.link)
+            i.appendChild(link)
+        }// works
 
 
     })
@@ -51,6 +67,7 @@ function someThing() {
         let headr = document.getElementById('head');
         for(let head of result.Header) {
             let h4 = document.createElement("h4")
+            h4.id = 'experience';
             h4.innerHTML = head.heading;
             headr.appendChild(h4);
         }// experience heading
@@ -89,14 +106,16 @@ function someThing() {
         let hDiv = document.getElementById('m-section');
         for(let head of result.Header) {
             let h4 = document.createElement("h4")
+            h4.id = 'blogs'
             h4.className = "blogs"
             h4.innerHTML = head.heading;
             hDiv.appendChild(h4);
         }//Blogs Header has styling
 
-        let imgDiv = document.getElementById('img')
+        let imgDiv = document.getElementById('imgDiv')
         for(let div of result.blog) {
             let img = document.createElement("img");
+            img.id = "img";
             img.className = "journeyimg"
             img.setAttribute('src', div.img);
             imgDiv.appendChild(img);
@@ -113,6 +132,7 @@ function someThing() {
        let pDiv = document.getElementById('div')
        for(let p of result.blog){
         let para = document.createElement('p')
+        para.id = "blogP";
         para.className = "paragraph"
         para.innerHTML = p.paragraph
         pDiv.appendChild(para);
@@ -126,6 +146,7 @@ function someThing() {
         let headerDiv = document.getElementById('resume-s')
         for(let head of result.Header) {
             let h4 = document.createElement('h4')
+            h4.id = 'resume'
             h4.className = "resume-s";
             h4.innerHTML = head.heading;
             headerDiv.appendChild(h4);
@@ -137,7 +158,7 @@ function someThing() {
             iframe.className = "adobepdf";
             iframe.setAttribute('src', resume.source);
             resumeDiv.appendChild(iframe);
-        }// resume PDF- styled but weird line- ask travis
+        }// resume PDF
 
         let ftr = document.getElementById('footer')
        for( let foot of result.Footer) {
@@ -160,3 +181,71 @@ function someThing() {
        }
     })
 }
+
+
+function randomPic() {
+    fetch('https://dog.ceo/api/breeds/image/random', {method: "GET"})
+    .then(response => response.json())
+    .then(result => 
+        {
+            let pic = document.getElementById('pic')
+            pic.setAttribute('src', result.message);   
+        })
+    }
+
+
+
+
+
+
+
+// mobile ham menu
+function hamMenu() {
+    let hamMenu = document.querySelector('.ham-menu')
+    let offScreenMenu = document.querySelector('.offScreen')
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+}
+
+function rightArrow(){
+    fetch("./page3.json")
+    .then(response => response.json())
+    .then(result => {
+        let newPic = result.buttons[++blogPosition].img
+        let img = document.getElementById('img');
+        img.setAttribute('src', newPic)
+        
+        let newBlog = result.buttons[blogPosition].desc
+        let paragraph = document.getElementById('blogP')
+        paragraph.innerHTML = newBlog;
+
+        if(blogPosition == 5) {
+            let change = document.getElementById('rightArrow')
+            change.style.color = "gray"
+            change.style.border = " solid gray 2px"
+        } //else if (blogPosition < 5){
+        //     change.style.color = "black"
+        // }
+        
+    })
+}
+function leftArrow(){
+    fetch("./page3.json")
+    .then(response => response.json())
+    .then(result => {
+        let newPic = result.buttons[--blogPosition].img
+        let img = document.getElementById('img');
+        img.setAttribute('src', newPic)
+        
+        let newBlog = result.buttons[blogPosition].desc
+        let paragraph = document.getElementById('blogP')
+        paragraph.innerHTML = newBlog;
+        
+        if(blogPosition > 0) {
+            let change = document.getElementById('leftArrow')
+            change.style.color = "black"
+        }
+
+    })
+}
+
