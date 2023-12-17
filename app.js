@@ -3,6 +3,7 @@ let blogPosition = 0;
 
 
 function someThing() {
+    randomPic();
 
     fetch("./page1.json")
     .then(response => response.json())
@@ -44,6 +45,7 @@ function someThing() {
         let div = document.createElement('div')
         
         for(let sect of result.links) {
+            
             let i = document.createElement('i')
             i.className = sect.icons, "icons";
             
@@ -183,14 +185,21 @@ function someThing() {
 }
 
 
-function randomPic() {
+function randomPic(event) {
     fetch('https://dog.ceo/api/breeds/image/random', {method: "GET"})
     .then(response => response.json())
     .then(result => 
         {
+            if (event) {
+                event.preventDefault();
+            }
             let pic = document.getElementById('pic')
             pic.setAttribute('src', result.message);   
         })
+    }
+
+    function noClick(event) {
+        event.preventDefault();
     }
 
 
@@ -211,41 +220,54 @@ function rightArrow(){
     fetch("./page3.json")
     .then(response => response.json())
     .then(result => {
-        let newPic = result.buttons[++blogPosition].img
-        let img = document.getElementById('img');
-        img.setAttribute('src', newPic)
-        
-        let newBlog = result.buttons[blogPosition].desc
-        let paragraph = document.getElementById('blogP')
-        paragraph.innerHTML = newBlog;
+        if(blogPosition <= 5) {
+            let newPic = result.buttons[++blogPosition].img
+            let img = document.getElementById('img');
+            img.setAttribute('src', newPic)
+            
+            let newBlog = result.buttons[blogPosition].desc
+            let paragraph = document.getElementById('blogP')
+            paragraph.innerHTML = newBlog;
 
-        if(blogPosition == 5) {
             let change = document.getElementById('rightArrow')
-            change.style.color = "gray"
-            change.style.border = " solid gray 2px"
-        } //else if (blogPosition < 5){
-        //     change.style.color = "black"
-        // }
-        
+            if (blogPosition > 0){
+                change.style.color = "black"
+                change.style.border = " solid black 2px"
+            } // else if(blogPosition == 5) {
+            //     change.style.color = "gray"
+            //     change.style.border = " solid gray 2px"
+            // } 
+
+            if(blogPosition > 0) {
+                let change = document.getElementById('leftArrow')
+                change.style.color = "black"
+                change.style.border = " solid black 2px"
+            }
+            console.log(blogPosition)
+        }
     })
 }
-function leftArrow(){
-    fetch("./page3.json")
-    .then(response => response.json())
-    .then(result => {
-        let newPic = result.buttons[--blogPosition].img
-        let img = document.getElementById('img');
-        img.setAttribute('src', newPic)
-        
-        let newBlog = result.buttons[blogPosition].desc
-        let paragraph = document.getElementById('blogP')
-        paragraph.innerHTML = newBlog;
-        
-        if(blogPosition > 0) {
-            let change = document.getElementById('leftArrow')
-            change.style.color = "black"
-        }
 
-    })
+function leftArrow(){
+    if(blogPosition >= 0) {
+        fetch("./page3.json")
+        .then(response => response.json())
+        .then(result => {
+            let newPic = result.buttons[--blogPosition].img
+            let img = document.getElementById('img');
+            img.setAttribute('src', newPic)
+        
+            let newBlog = result.buttons[blogPosition].desc
+            let paragraph = document.getElementById('blogP')
+            paragraph.innerHTML = newBlog;
+        
+            if(blogPosition == 0) {
+            let change = document.getElementById('leftArrow')
+            change.style.color = "gray"
+            change.style.border = " solid gray 2px"
+            }
+            console.log(blogPosition)
+        }
+    )}
 }
 
