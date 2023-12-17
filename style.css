@@ -221,6 +221,10 @@ a:visited {
 .click {
     font-size: 15px;
 }
+.keydown {
+    display: flex;
+    justify-content: center;
+}
  .footer {
     background: linear-gradient(217deg, rgba(255,0,0), rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, rgba(0, 255, 0), rgba(0,255,0,0) 70.71%),
@@ -421,6 +425,9 @@ a:visited {
         height: 850px;
         width: 535px;
         margin-left: 18px;
+     }
+     .keydown {
+        display: none;
      }
      .footer {
         height: 30px;
