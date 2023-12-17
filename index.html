@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kayla Dale</title>
   </head>
-  <body onload="someThing()" ondblclick="randomPic()">
+  <body onload="someThing()">
     <main>
       <!--                    BEGINNING PAGE 1      -->
       <section class="p1">
@@ -48,7 +48,12 @@
           <p class="h-paragraph"></p>
         </section>
 
-        <section class="icons" id="icons"></section>
+        <section class="icons" id="icons">
+          <a href="https://github.com/dashboard"
+            ><i class="fa-brands fa-github git" aria-hidden="true"></i
+          ></a>
+          <!-- put icon inside a href -->
+        </section>
       </section>
       <!--                    ENDING PAGE 1      -->
       <!--                    BEGINNING PAGE 2*      -->
@@ -106,7 +111,8 @@
             <input
               type="submit"
               value="double click for cute pics"
-              ondblclick="randomPic()"
+              ondblclick="randomPic(event)"
+              onclick="noClick(event)"
               class="click"
             />
           </div>

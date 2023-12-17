@@ -387,6 +387,8 @@
     }
     .fa-arrow-left {
         color: gray;
+        border: solid gray 2px;
+
     }
     
     .mobileButton:hover {
