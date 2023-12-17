@@ -37,7 +37,20 @@
     align-items: center;
     padding-bottom: 150px;
     word-spacing: 200px;
-}  
+    
+}
+  
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+.a:visited {
+    text-decoration: none;
+    color: black;
+}
 
 .git, .linkedin, .pdf {
     padding-left: 40px;
