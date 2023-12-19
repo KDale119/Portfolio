@@ -74,10 +74,12 @@ a:visited {
     font-size: 30px;
     background: black;
     color: white;
+    text-decoration: none;
 }
 .ham-menu{
     display: none;
 }
+
 .Home:hover {
     cursor: pointer;
     transform: scale(1.3);
