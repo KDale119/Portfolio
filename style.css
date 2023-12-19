@@ -37,7 +37,20 @@
     align-items: center;
     padding-bottom: 150px;
     word-spacing: 200px;
-}  
+    
+}
+  
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+.a:visited {
+    text-decoration: none;
+    color: black;
+}
 
 .git, .linkedin, .pdf {
     padding-left: 40px;
@@ -61,10 +74,12 @@
     font-size: 30px;
     background: black;
     color: white;
+    text-decoration: none;
 }
 .ham-menu{
     display: none;
 }
+
 .Home:hover {
     cursor: pointer;
     transform: scale(1.3);
@@ -207,6 +222,10 @@
 
 .click {
     font-size: 15px;
+}
+.keydown {
+    display: flex;
+    justify-content: center;
 }
  .footer {
     background: linear-gradient(217deg, rgba(255,0,0), rgba(255, 0, 0, 0) 70.71%),
@@ -408,6 +427,9 @@
         height: 850px;
         width: 535px;
         margin-left: 18px;
+     }
+     .keydown {
+        display: none;
      }
      .footer {
         height: 30px;

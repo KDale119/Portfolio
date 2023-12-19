@@ -11,7 +11,6 @@ function someThing() {
        // document.getElementById('home').innerHTML = result.navbarOpts[0].opt1
        for (let opt of result.navbarOpts) {
         let link = document.createElement('a')
-        
         link.setAttribute('href', opt.link)
         let h3 = document.createElement('h3')
         h3.className = opt.opt1
@@ -47,6 +46,7 @@ function someThing() {
         
         for(let sect of result.links) {
             let link = document.createElement('a')
+            link.className = 'a'
             link.setAttribute('href', sect.link)
             let i = document.createElement('i')
             i.className = sect.icons, "icons";
