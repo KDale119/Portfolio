@@ -7,7 +7,7 @@
     "pdfResume" :[
         {
             "PDF": "My resume",
-            "source": "/PDF/Kayla Dale 2023 PDF.pdf"
+            "source": "./PDF/Kayla Dale 2023 PDF.pdf"
         }
     ],
     "Footer": [
